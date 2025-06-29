@@ -7,15 +7,17 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #countLabel
 {
     display: block;
     margin: 40px auto;
-    font-size: 8em;
-    font-family: Arial;
-    font-weight:normal;
+    font-size: clamp(4rem, 20vw, 8rem);
+    font-family: Arial, sans-serif;
+    font-weight: normal;
     color: black;
     text-align: center;
     width: 8ch;
@@ -25,20 +27,27 @@ body
 
 #buttonContainer
 {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .buttons
 {
-    padding: 16px 32px;
-    font-size: 1.3em;
+    flex: 1 1 100px;
+    min-width: 100px;
+    max-width: 200px;
+    padding: 14px 24px;
+    font-size: 1.2em;
     font-family: 'Segoe UI', sans-serif;
     border: none;
     border-radius: 50px;
-    margin: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 #increase
@@ -75,4 +84,25 @@ body
 {
     background-color: #5a6268;
     color: #e2e6ea;
+}
+
+@media (max-width: 400px)
+{
+    #countLabel
+    {
+        font-size: 4rem;
+        width: auto;
+    }
+
+    .buttons
+    {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #buttonContainer
+    {
+        flex-direction: column;
+        align-items: center;
+    }
 }
