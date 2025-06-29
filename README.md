@@ -8,7 +8,7 @@ A basic counter application built using HTML, CSS, and JavaScript.
 - Simple and responsive layout
 
 ## Preview
-[🔗 Live Demo Link Coming Soon](#)
+[Click here to view the app](https://derarshan.github.io/counter-app/)
 
 ---
 
