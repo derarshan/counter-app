@@ -1,12 +1,11 @@
+
 body
 {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     margin: 0;
     background: white;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -20,25 +19,21 @@ body
     font-weight: normal;
     color: black;
     text-align: center;
-    width: 8ch;
-    white-space: nowrap;
+    width: auto;
+    border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #buttonContainer
 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
+    display: block;
+    text-align: center;
 }
 
 .buttons
 {
-    flex: 1 1 100px;
-    min-width: 100px;
-    max-width: 200px;
+    min-width: auto;
+    max-width: auto;
     padding: 14px 24px;
     font-size: 1.2em;
     font-family: 'Segoe UI', sans-serif;
@@ -84,25 +79,4 @@ body
 {
     background-color: #5a6268;
     color: #e2e6ea;
-}
-
-@media (max-width: 400px)
-{
-    #countLabel
-    {
-        font-size: 4rem;
-        width: auto;
-    }
-
-    .buttons
-    {
-        width: 100%;
-        font-size: 1em;
-    }
-
-    #buttonContainer
-    {
-        flex-direction: column;
-        align-items: center;
-    }
 }
